@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/2lana/order-summary-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [netlify](https://vermillion-zabaione-216eeb.netlify.app/)
 
 ## My process
 
