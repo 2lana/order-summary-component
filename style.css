@@ -164,6 +164,7 @@ a.cancel-order h3:hover {
         background-position: top;
         overflow: hidden;
         background-size: 50%;
+        padding-top:6.25rem;
    }
 
    main {
