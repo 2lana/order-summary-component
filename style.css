@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --medium-slate-blue: hsla(245, 83%, 68%, 1);
+}
+
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100%;
+    background: url("images/pattern-background-mobile.svg") var(--pale-blue); 
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    overflow: hidden;
+    font-family: Red-Hat-Display;
+    font-size: 1rem;
+    max-width: 23.43rem;
+}
+
+main {
+    display: flex;
+    margin: 5rem 1.5rem 0;
+    box-sizing: border-box;
+    flex-direction: column; 
+    align-items: center;   
+    overflow: hidden;
+    max-width: 23.43rem;
+    border-radius: 4%;
+    background: var(--very-pale-blue);
+}
+
+section.description-order {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    min-width: 100%;
+}
+
+img.illustration-hero {
+    max-width: 100%;
+}
+
+.title-order h1 {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 2rem;
+    font-weight: 900;
+}
+
+p.description {
+    padding: 0 2rem;
+    line-height: 1.25rem;
+    margin: 0 0 1.88rem;
+    color: var(--desaturated-blue);
+}
+
+
+section.payment {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    min-width: 100%;
+}
+
+.plan-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    gap: 2.5rem;
+    padding: 1rem;
+    margin: 0 0 1.25rem;
+}
+
+.select-plan-price {
+    display: block;
+    line-height: 0.5rem;
+}
+
+.calendar-interval h2 {
+    font-size: 1rem;
+}
+
+.price-interval h2{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+}
+
+a.change-plan-price {
+     text-decoration: none;
+}
+
+a.change-plan-price h2{
+    color: var(--dark-blue);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+a.change-plan-price:hover {
+    color: var(--dark-blue);
+}
+
+button {
+    background-color: var(--bright-blue); 
+    border-color: var(--bright-blue);
+    box-shadow: 2px 2px 8px var(--desaturated-blue);
+    color: var(--very-pale-blue);
+    font-weight:400; 
+    padding:0 4rem; 
+    border-radius: 1rem;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--medium-slate-blue);
+}
+
+a.proceed-payment {
+    background-color: var(--bright-blue); 
+    text-decoration: none;
+    font-weight:400; 
+}
+
+a.proceed-payment h3 {
+    color: var(--very-pale-blue);
+}
+
+.cancel-order {
+    text-decoration: none;
+    color: var(--dark-blue);
+    margin: 1.5rem 0 2rem;
+}
+
+a.cancel-order h3 {
+    font-weight: 700;
+}
+
+a.cancel-order h3:hover {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+@media screen and (min-width: 90rem) {
+    body{
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        min-height: 100%;
+        background: url("images/pattern-background-desktop.svg") var(--pale-blue);
+        background-repeat: no-repeat; 
+        background-position: top;
+        overflow: hidden;
+        background-size: 50%;
+   }
+
+   main {
+        margin: 0 auto;   
+        overflow: hidden;
+        max-width: 90rem;
+        background-image: url("images/pattern-background-desktop.svg")  var(--pale-blue);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-attachment: fixed;
+        overflow: hidden;
+        background-position: center;
+        background-size: 25%;
+    }
+
+    button:hover {
+        background-color: var(--medium-slate-blue);
+        cursor: pointer; 
+        transition: .5s ease; 
+    }
+    
+    a.change-plan-price h2:hover {
+        font-weight: 900;
+        color: var(--desaturated-blue);
+        text-decoration: none;
+         
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
