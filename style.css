@@ -61,6 +61,7 @@ p.description {
     line-height: 1.25rem;
     margin: 0 0 1.88rem;
     color: var(--desaturated-blue);
+    font-weight: 600;
 }
 
 
@@ -111,15 +112,23 @@ a.change-plan-price:hover {
     color: var(--dark-blue);
 }
 
+.proceed-payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 button {
     background-color: var(--bright-blue); 
     border-color: var(--bright-blue);
     box-shadow: 2px 2px 8px var(--desaturated-blue);
     color: var(--very-pale-blue);
-    font-weight:400; 
-    padding:0 4rem; 
+    font-family: Red-Hat-Display;
+    font-size: 1rem;
+    font-weight:700; 
+    padding:0.5rem 5rem; 
     border-radius: 1rem;
-    width: 100%;
+    max-width: 100%;
 }
 
 button:hover {
@@ -130,6 +139,7 @@ button:hover {
     text-decoration: none;
     color: var(--dark-blue);
     margin: 1.5rem 0 2rem;
+    font-weight: 700;
 }
 
 a.cancel-order h3 {
@@ -154,7 +164,7 @@ a.cancel-order h3:hover {
         background-position: top;
         overflow: hidden;
         background-size: 50%;
-        padding-top:6.25rem;
+        padding-top: 6.25rem ;
    }
 
    main {
