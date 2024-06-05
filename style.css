@@ -126,16 +126,6 @@ button:hover {
     background-color: var(--medium-slate-blue);
 }
 
-a.proceed-payment {
-    background-color: var(--bright-blue); 
-    text-decoration: none;
-    font-weight:400; 
-}
-
-a.proceed-payment h3 {
-    color: var(--very-pale-blue);
-}
-
 .cancel-order {
     text-decoration: none;
     color: var(--dark-blue);
